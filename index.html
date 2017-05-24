@@ -3,23 +3,95 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>gradient</title>
-		<style type="text/css">
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			body{
-				 width: 100wh;
-       			 height: 100vh;
-				/*background: -webkit-gradient(linear,left top,right bottom,from(#a3bded),to(rgb(1,187,116)));*/
-				background: -webkit-gradient(linear,left top,right bottom,from(rgb(26,62,84)),to(rgb(1,187,116)));
-				
-				/*background: linear-gradient(to left top,#4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 56%, rgb(26,62,84) 100%);*/
-				 /*background: -webkit-gradient(linear, left top, left bottom, from(#ff0), to(#f00));*/
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/style.js"></script>
 	</head>
 	<body>
+		<header>
+			<img src="img/book.svg"/>
+			<h1>学生选课信息系统</h1>
+			<div class="user">
+				<p><i class="fa fa-user-circle"></i>小明</p>
+				<a href=""><i class="fa fa-unlock-alt"></i>修改密码</a><span>|</span>
+				<a href=""><i class="fa fa-reply"></i>退出</a>
+			</div>
+		</header>
 		
+		<aside>
+			<div class="list">
+				<ul>
+					<li>
+						<p class="title">学院管理</p>
+						<ul class='list-se'>
+							<p class="title">学院管理</p>
+							<li><p>学院录入</p></li>
+							<li><p>学院信息管理</p></li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">班级管理</p>
+						<ul class='list-se'>
+							<p class="title">班级管理</p>
+							<li><p>班级录入</p></li>
+							<li><p>班级信息管理</p></li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">课室管理</p>
+						<ul class='list-se'>
+							<p class="title">课室管理</p>
+							<li><p>课室录入</p></li>
+							<li><p>课室信息管理</p></li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">课表管理</p>
+						<ul class='list-se'>
+							<p class="title">课表管理</p>
+							<li><p>课表录入</p></li>
+							<li><p>课表信息管理</p></li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">教师管理</p>
+						<ul class='list-se'>
+							<p class="title">教师管理</p>
+							<li><p>教师录入</p></li>
+							<li><p>教师信息管理</p></li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">学生管理</p>
+						<ul class='list-se'>
+							<p class="title">学生管理</p>
+							<li><p>学生录入</p></li>
+							<li><p>学生信息管理</p></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+			
+		<article>
+			 
+			    <ul id="tabs">
+			    </ul>
+			    <div id="content"> </div>
+		</article>
+		
+		<footer></footer>
 	</body>
+	<script type="text/javascript">
+		$(document).ready(function($) 
+		{
+			$('.list ul li p').clickdown();
+			$('.list-se p[class=title]').clickup();
+			$('.list>ul>li').ad();
+			$('.list ul li p').liclickdown();
+		});
+			
+			 
+	</script>
 </html>

@@ -1,0 +1,174 @@
+/*重置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;color: white;}
+a:active{text-decoration: none;color: rgb(4,170,111);}
+span{display: inline-block;}
+body{
+	 width: 100vw;
+	 min-width: 600px;
+     height: 100vh;
+	 background: -webkit-gradient(linear,left top,right bottom,from(rgb(26,62,84)),to(rgb(1,187,116)));
+}
+
+ /*头部*/
+header{
+	width: 99.9%;
+	height: 10%;
+	min-height: 90px;
+}
+
+header img{
+	height: 100%;
+	padding: 0 1em;
+	float: left;
+}
+header h1{
+	color: rgb(4,170,111);
+	padding: 20px 25px 0 0;
+	float: left;
+}
+header div.user{
+	font-size: 18px;
+}
+.user p{
+	padding: 10px ;
+	color: #ccc;
+}
+.user a i{padding-right:5px;}
+
+.user a{
+	padding: 0 2px;
+}
+.user  i{padding-right:5px;}
+
+.user a:after{
+	content: "";
+	padding-left: 6px;
+}
+.user span{
+	color: #ccc;;
+}
+
+/*侧边栏*/
+aside{
+	width: 10%;
+	min-width: 200px;
+	height: 89%;
+	float: left;
+}
+.list{
+	width : 100%;
+}
+.list ul{
+	list-style: none;
+}
+.list>ul>li{
+	width        : 100%;
+	border-bottom: 1px solid #555;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+			transition: .3s ease;
+}
+.list>ul>li p[class=title]{
+	width      : 100%;
+	height     : 50px;
+	line-height: 50px;
+	padding-left    : 10px;
+	border     : none;
+	position   : relative;
+	font-size  : 20px;
+	color: white;
+}
+.list>ul>li p[class=title]>span{
+	position: absolute;
+	right: 10%;
+}
+.list-se{
+	overflow: hidden;
+	display: none;
+}
+.list-se>p[class=title]{
+	background: #444 !important;
+	color: white !important;
+	
+}
+.list-se>li{
+	position: relative;
+	right   : -100%;
+	-webkit-transition: right .5s;
+	-moz-transition   : right .5s;
+	-o-transition     : right .5s;
+	transition        : right .5s;
+}
+.list-se>li>p{
+	background  : #3b3b3b;
+	color       : #f0f0f0;
+	height      : 50px;
+	-webkit-box-sizing :border-box;
+	        box-sizing :border-box;
+	padding-left: 20px;
+	line-height : 50px;
+	border-left : 5px solid #3b3b3b; 
+	-webkit-transition   : border .5s; 
+			 transition  : border .5s;
+	-webkit-transition   : background .3s;
+			 transition  : background .3s;
+}
+.list-se>li>p:hover{
+	border-color: rgb(1,187,116); 
+	background  : #5b5b5b;
+}
+
+/*主体*/
+article{
+	width: 89%;
+	height: 86%;
+	float: left;
+}
+
+#tabs {
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+}
+#tabs li {
+	float:left;
+	display:block;
+	padding:5px;
+	margin-right:5px;
+}
+#tabs li a {
+	color:#ccc;
+	text-decoration:none;
+}
+#tabs li.current {
+	background-color:rgba(26,62,84,0.8);
+}
+#tabs li.current a {
+	color:#fff;
+	text-decoration:none;
+}
+#tabs li a.remove {
+	color:crimson;
+	margin-left:10px;
+}
+#content {
+	width: 100%;
+	height: 100%;
+}
+#content iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+/*尾部*/
+footer{
+	
+}
